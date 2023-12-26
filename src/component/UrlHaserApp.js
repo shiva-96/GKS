@@ -27,7 +27,6 @@ const UrlHasherApp = () => {
 
     const goOnTheUrl = async ()=>{
         try {
-            alert(getSavedUrlID)
             await axios.post('http://localhost:8081/decrypt', {
                 encryptedData:hashedUrl,
                 savedId:getSavedUrlID,
