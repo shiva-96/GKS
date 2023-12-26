@@ -62,7 +62,7 @@ const UrlHasherApp = () => {
                         value={expiresAfter}
                         onChange={(e) => setExpiresAfter(e.target.value)} />
                 </div>
-                <button type='button'  className="btn btn-primary mb-2" onClick={generateHash}>Generate Hash</button>
+                <button type='button'  className="btn btn-primary mb-2" onClick={generateHash}>Generate Hash Url</button>
                 {hashedUrl && (
                     <div style={{width:"100%"}}>
                         <b>Hashed URL:</b>
