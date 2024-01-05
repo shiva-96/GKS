@@ -14,6 +14,7 @@ const UrlHasherApp = () => {
                 originalUrl:originalUrl,
                 expiresAfter: expiresAfter ? parseInt(expiresAfter) : undefined,
             }).then((data)=>{
+                console.log("fbsfbsfd");
                 setgetSavedUrlID(data.data.urlId)
                 setHashedUrl(data.data.hashedUrl);
             }).catch((error)=>{
